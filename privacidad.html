@@ -3,79 +3,107 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Política de Privacidad — Osiris (Hermes Agent)</title>
+<title>Política de Privacidad — Galpón Labs</title>
+<meta name="description" content="Política de Privacidad de las aplicaciones y servicios de Galpón Labs.">
 <style>
-  :root { color-scheme: dark; }
-  body { margin:0; padding:3rem 1.25rem; background:#0f1115; color:#e6e8ee;
-         font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
-  main { max-width: 46rem; margin: 0 auto; }
-  h1 { font-size:1.6rem; margin:0 0 .25rem; }
-  h2 { font-size:1.1rem; margin:2rem 0 .5rem; }
+  :root { color-scheme: dark; --bg:#0f1115; --fg:#e6e8ee; --mut:#8b93a7; --ln:#232734; --ac:#7ab8ff; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+  .wrap { max-width: 46rem; margin: 0 auto; padding: 4rem 1.25rem 3rem; }
+  .logo { display:inline-flex; align-items:center; gap:.6rem; font-weight:700; font-size:1.1rem;
+          letter-spacing:-.01em; margin-bottom:2.25rem; }
+  .logo .mark { width:32px; height:32px; border-radius:9px; display:grid; place-items:center;
+                background:linear-gradient(135deg,#7ab8ff,#5f7cff); color:#0f1115; }
+  h1 { font-size:clamp(1.5rem,3.6vw,2rem); margin:0 0 .35rem; letter-spacing:-.02em; }
+  .sub { color:var(--mut); margin:0 0 2.25rem; font-size:.95rem; }
+  h2 { font-size:1.02rem; margin:2.25rem 0 .6rem; }
   p, li { color:#c3c8d4; }
-  a { color:#7ab8ff; }
-  .sub { color:#8b93a7; margin-top:0; }
-  footer { margin-top:3rem; padding-top:1rem; border-top:1px solid #232734; color:#8b93a7; font-size:.875rem; }
+  ul { padding-left:1.15rem; }
+  li { margin:.35rem 0; }
+  a { color:var(--ac); }
+  .box { border:1px solid var(--ln); border-left:3px solid var(--ac); border-radius:10px;
+         padding:.9rem 1.1rem; background:#14171d; margin:1.5rem 0; }
+  footer { margin-top:3.5rem; padding-top:1.25rem; border-top:1px solid var(--ln); color:var(--mut);
+           font-size:.85rem; display:flex; flex-wrap:wrap; gap:.75rem; justify-content:space-between; }
 </style>
 </head>
 <body>
-<main>
+<div class="wrap">
+
+  <div class="logo"><span class="mark">⌂</span> Galpón Labs</div>
+
   <h1>Política de Privacidad</h1>
-  <p class="sub">Aplicación: <strong>Osiris</strong> — asistente personal self-hosted sobre Hermes Agent.</p>
+  <p class="sub">Aplicaciones y servicios de Galpón Labs · Última actualización: 14 de septiembre de 2026</p>
 
   <h2>1. Alcance</h2>
-  <p>Esta aplicación es de uso <strong>estrictamente personal y privado</strong>. La utiliza un único
-  titular, sobre su propia cuenta de Google. No es un servicio ofrecido al público, no tiene
-  usuarios terceros ni registro abierto.</p>
+  <p>Esta política aplica a las aplicaciones y servicios desarrollados por <strong>Galpón Labs</strong>
+  (en adelante, «el estudio»), incluyendo asistentes personales autoalojados y herramientas internas.</p>
+  <p>Nuestras aplicaciones son de <strong>uso estrictamente personal y privado</strong>: las utiliza un
+  único titular, sobre sus propias cuentas y su propia infraestructura. No somos un servicio abierto al
+  público, no ofrecemos registro de usuarios y no procesamos datos de terceros.</p>
 
-  <h2>2. Qué datos accede</h2>
-  <p>Con el consentimiento explícito del titular, la aplicación solicita acceso a los siguientes
-  datos de <em>su propia</em> cuenta:</p>
+  <h2>2. Qué datos accedemos</h2>
+  <p>Cuando el titular autoriza expresamente una conexión con su cuenta de Google, la aplicación puede
+  solicitar acceso a los siguientes datos de <em>su propia</em> cuenta:</p>
   <ul>
-    <li><strong>Gmail</strong> (solo lectura, envío y modificación): leer correo, enviar respuestas y
-        aplicar etiquetas.</li>
-    <li><strong>Google Calendar</strong>: leer y crear eventos y recordatorios.</li>
-    <li><strong>Google Drive, Docs y Sheets</strong>: leer y escribir archivos del titular.</li>
-    <li><strong>People API</strong> (solo lectura): consultar contactos para resolver destinatarios.</li>
+    <li><strong>Gmail</strong> — leer correo, enviar respuestas y aplicar etiquetas.</li>
+    <li><strong>Google Calendar</strong> — leer, crear y administrar eventos y recordatorios.</li>
+    <li><strong>Google Drive, Docs y Sheets</strong> — leer y escribir archivos del titular.</li>
+    <li><strong>People API</strong> — leer contactos, únicamente para resolver destinatarios de correo.</li>
   </ul>
 
   <h2>3. Dónde se guardan los datos</h2>
-  <p>Los datos <strong>no salen del entorno del titular</strong>. El token de acceso OAuth y cualquier
-  copia de trabajo se almacenan cifrados en disco en el servidor personal del titular
-  (infraestructura propia, autoalojada). No existe ningún servidor intermediario operado por
-  terceros.</p>
+  <div class="box">
+    <p style="margin:0">Los datos <strong>no salen del entorno del titular</strong>. Las credenciales de
+    acceso y cualquier copia de trabajo se almacenan en el servidor privado del titular, bajo su control
+    directo. <strong>No existe ningún servidor intermediario operado por el estudio ni por terceros.</strong></p>
+  </div>
 
   <h2>4. Con quién se comparten</h2>
-  <p><strong>Con nadie.</strong> No se venden, alquilan, ceden ni comparten datos con terceros.
-  No se usan para publicidad, perfilado ni entrenamiento de modelos.</p>
-  <p>Únicamente se transmiten consultas a las APIs de Google, necesarias para cumplir la función
-  solicitada (por ejemplo, leer un correo o crear un evento). El contenido puede procesarse a
-  través de proveedores de modelos de lenguaje (LLM) configurados por el propio titular, con la
-  sola finalidad de ejecutar la instrucción que él mismo da.</p>
+  <p><strong>Con nadie.</strong> No vendemos, alquilamos, cedemos ni compartimos datos con terceros. No
+  los usamos para publicidad, perfilado, ni para entrenar modelos de inteligencia artificial.</p>
+  <p>Únicamente se realizan consultas a las APIs de los proveedores utilizados —como Google— para cumplir
+  la función que el titular solicita. Determinado contenido puede procesarse a través de proveedores de
+  modelos de lenguaje (LLM) configurados por el propio titular, con la sola finalidad de ejecutar la
+  instrucción que él mismo dio.</p>
 
   <h2>5. Retención</h2>
-  <p>No se mantiene una copia permanente del correo, los archivos o el calendario. Los datos se
-  leen en el momento de la consulta. El titular puede borrar el token y los datos locales en
-  cualquier momento.</p>
+  <p>No mantenemos copias permanentes de correo, archivos o eventos de calendario. Los datos se consultan
+  en el momento y se descartan. El titular puede eliminar las credenciales y los datos locales en
+  cualquier momento, sin intervención del estudio.</p>
 
   <h2>6. Seguridad</h2>
-  <p>El acceso se realiza mediante OAuth 2.0 con tokens revocables. El servidor es privado, no
-  expuesto públicamente, y las credenciales no se comparten con terceros.</p>
+  <p>El acceso se realiza mediante <strong>OAuth 2.0</strong> con tokens revocables, transmitidos siempre
+  por HTTPS. El servidor donde se alojan las aplicaciones es privado y no está expuesto públicamente.
+  Las credenciales nunca se comparten con terceros.</p>
 
-  <h2>7. Revocación y derechos del titular</h2>
-  <p>El titular puede revocar el acceso en cualquier momento desde
-  <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>,
-  o eliminando el token local. Al revocarlo, la aplicación pierde todo acceso de inmediato.</p>
+  <h2>7. Derechos del titular y revocación</h2>
+  <p>El titular puede revocar el acceso de cualquiera de nuestras aplicaciones en cualquier momento desde
+  <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>, o eliminando
+  las credenciales locales. Al revocar el acceso, la aplicación pierde todo permiso de forma inmediata.</p>
 
   <h2>8. Uso limitado (<em>Limited Use</em>)</h2>
-  <p>El uso que esta aplicación hace de la información recibida de las APIs de Google cumple con la
+  <p>El uso que Galpón Labs hace de la información recibida de las APIs de Google cumple con la
   <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de Datos de Usuario
   de los Servicios API de Google</a>, incluidos los requisitos de <strong>Uso Limitado</strong>
-  (<em>Limited Use</em>).</p>
+  (<em>Limited Use</em>). Los datos obtenidos de las APIs de Google no se transfieren ni se utilizan para
+  ningún fin distinto de los descritos en esta política.</p>
 
-  <h2>9. Contacto</h2>
+  <h2>9. Menores</h2>
+  <p>Nuestras aplicaciones no están dirigidas a menores de edad y no recolectan datos de menores.</p>
+
+  <h2>10. Cambios en esta política</h2>
+  <p>Cualquier cambio se publicará en esta misma página, con su fecha de actualización. El uso continuado
+  de las aplicaciones implica la aceptación de la versión vigente.</p>
+
+  <h2>11. Contacto</h2>
   <p>Consultas sobre privacidad: <a href="mailto:driussi.comissoramiro@gmail.com">driussi.comissoramiro@gmail.com</a></p>
 
-  <footer>Última actualización: 14 de septiembre de 2026 · <a href="index.html">Inicio</a></footer>
-</main>
+  <footer>
+    <span>© 2026 Galpón Labs · Argentina</span>
+    <span><a href="index.html">Inicio</a></span>
+  </footer>
+
+</div>
 </body>
 </html>

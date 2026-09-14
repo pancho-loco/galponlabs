@@ -3,48 +3,64 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Osiris — Asistente personal (Hermes Agent)</title>
+<title>Galpón Labs — Software y productos digitales</title>
+<meta name="description" content="Galpón Labs es un estudio de software: construimos productos digitales, cartas digitales y herramientas a medida.">
 <style>
-  :root { color-scheme: dark; }
-  body { margin:0; padding:3rem 1.25rem; background:#0f1115; color:#e6e8ee;
-         font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
-  main { max-width: 46rem; margin: 0 auto; }
-  h1 { font-size:1.6rem; margin:0 0 .25rem; }
-  h2 { font-size:1.1rem; margin:2rem 0 .5rem; }
+  :root { color-scheme: dark; --bg:#0f1115; --fg:#e6e8ee; --mut:#8b93a7; --ln:#232734; --ac:#7ab8ff; }
+  * { box-sizing: border-box; }
+  body { margin:0; padding:0; background:var(--bg); color:var(--fg); font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+  .wrap { max-width: 46rem; margin: 0 auto; padding: 4rem 1.25rem 3rem; }
+  .logo { display:inline-flex; align-items:center; gap:.6rem; font-weight:700; letter-spacing:-.01em;
+          font-size:1.15rem; margin-bottom:2.5rem; }
+  .logo .mark { width:34px; height:34px; border-radius:9px; display:grid; place-items:center;
+                background:linear-gradient(135deg,#7ab8ff,#5f7cff); color:#0f1115; font-size:18px; }
+  h1 { font-size:clamp(1.7rem,4vw,2.3rem); line-height:1.15; margin:0 0 1rem; letter-spacing:-.02em; }
+  h1 .dim { color:var(--mut); }
+  p.lead { font-size:1.05rem; color:#c3c8d4; margin:0 0 2rem; }
+  h2 { font-size:1.05rem; margin:2.5rem 0 .75rem; letter-spacing:-.01em; }
   p, li { color:#c3c8d4; }
-  a { color:#7ab8ff; }
-  .sub { color:#8b93a7; margin-top:0; }
-  footer { margin-top:3rem; padding-top:1rem; border-top:1px solid #232734; color:#8b93a7; font-size:.875rem; }
+  ul { padding-left:1.15rem; }
+  li { margin:.35rem 0; }
+  a { color:var(--ac); }
+  .cards { display:grid; gap:.9rem; grid-template-columns:repeat(auto-fit,minmax(13rem,1fr)); margin-top:1rem; }
+  .card { border:1px solid var(--ln); border-radius:12px; padding:1rem 1.1rem; background:#14171d; }
+  .card strong { display:block; margin-bottom:.2rem; color:var(--fg); font-size:.95rem; }
+  .card span { font-size:.9rem; color:var(--mut); }
+  footer { margin-top:3.5rem; padding-top:1.25rem; border-top:1px solid var(--ln); color:var(--mut); font-size:.85rem; display:flex; flex-wrap:wrap; gap:.75rem; justify-content:space-between; }
 </style>
 </head>
 <body>
-<main>
-  <h1>Osiris</h1>
-  <p class="sub">Asistente personal self-hosted, sobre <strong>Hermes Agent</strong> (Nous Research).</p>
+<div class="wrap">
 
-  <p>Este sitio es la página informativa de la aplicación OAuth <em>«Osiris»</em>, usada
-  exclusivamente por su único titular para conectar su propia cuenta de Google a su asistente
-  personal autoalojado.</p>
+  <div class="logo"><span class="mark">⌂</span> Galpón Labs</div>
 
-  <h2>Qué hace la aplicación</h2>
-  <ul>
-    <li>Leer y enviar correo en nombre del propio usuario (Gmail).</li>
-    <li>Leer y crear eventos en su propio calendario (Google Calendar).</li>
-    <li>Leer y escribir archivos en su propio Drive, Docs y Sheets.</li>
-    <li>Leer sus propios contactos para resolver destinatarios de correo.</li>
-  </ul>
+  <h1>Construimos productos digitales.<br><span class="dim">Del galpón al mostrador.</span></h1>
+  <p class="lead">Galpón Labs es un estudio de software independiente radicado en Argentina. Diseñamos y
+  desarrollamos herramientas para negocios y personas: cartas digitales, códigos QR, automatizaciones
+  y asistentes propios.</p>
 
-  <h2>Quién la usa</h2>
-  <p>Una sola persona: el titular de la cuenta de Google autorizada. La aplicación no está
-  publicada al público, no acepta registros y no presta servicio a terceros.</p>
+  <h2>Qué hacemos</h2>
+  <div class="cards">
+    <div class="card"><strong>Cartas digitales</strong><span>Menús accesibles por QR, sin apps ni instalación, para bares y restaurantes.</span></div>
+    <div class="card"><strong>Automatización</strong><span>Herramientas a medida que le sacan trabajo manual a los negocios.</span></div>
+    <div class="card"><strong>Asistentes propios</strong><span>Desarrollo interno de asistentes personales autoalojados.</span></div>
+  </div>
 
-  <h2>Privacidad</h2>
-  <p>Ver la <a href="privacidad.html">Política de Privacidad</a>.</p>
+  <h2>Privacidad y datos</h2>
+  <p>Este sitio es la cara pública de las aplicaciones que Galpón Labs desarrolla y utiliza. Nuestras
+  aplicaciones son de <strong>uso propio</strong>: no prestan servicio a terceros, no tienen registro
+  abierto y no recolectan datos de visitantes. Los datos a los que acceden —correo, calendario,
+  archivos— pertenecen a su propio titular y quedan alojados en su infraestructura.</p>
+  <p>Leé la <a href="privacidad.html">Política de Privacidad</a> completa.</p>
 
   <h2>Contacto</h2>
-  <p>Soporte: <a href="mailto:driussi.comissoramiro@gmail.com">driussi.comissoramiro@gmail.com</a></p>
+  <p>Soporte y consultas: <a href="mailto:driussi.comissoramiro@gmail.com">driussi.comissoramiro@gmail.com</a></p>
 
-  <footer>Última actualización: 14 de septiembre de 2026</footer>
-</main>
+  <footer>
+    <span>© 2026 Galpón Labs · Argentina</span>
+    <span><a href="privacidad.html">Política de Privacidad</a></span>
+  </footer>
+
+</div>
 </body>
 </html>
