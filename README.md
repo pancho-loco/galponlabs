@@ -7,6 +7,9 @@ Sitio público de **Galpón Labs** (estudio de software, Argentina). Se publica 
 
 - `index.html` — página de inicio: qué es Galpón Labs y qué hace.
 - `privacidad.html` — Política de Privacidad (incluye la cláusula de *Limited Use* de las APIs de Google).
+- `terminos.html` — Términos y Condiciones de uso.
+- `robots.txt` — permite el rastreo y apunta al sitemap.
+- `sitemap.xml` — índice de URLs para los buscadores.
 - `CNAME` — dominio personalizado para GitHub Pages (`galponlabs.com`).
 
 ## Por qué existe
