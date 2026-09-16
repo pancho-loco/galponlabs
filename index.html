@@ -28,6 +28,54 @@
   .card span { font-size:.9rem; color:var(--mut); }
   footer { margin-top:3.5rem; padding-top:1.25rem; border-top:1px solid var(--ln); color:var(--mut); font-size:.85rem; display:flex; flex-wrap:wrap; gap:.75rem; justify-content:space-between; }
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://galponlabs.com/#organizacion",
+      "name": "Galpón Labs",
+      "alternateName": "Galpon Labs",
+      "url": "https://galponlabs.com/",
+      "description": "Estudio de software independiente radicado en Argentina. Desarrolla productos digitales: cartas digitales y menús por código QR, automatizaciones y asistentes propios.",
+      "email": "soporte@galponlabs.com",
+      "foundingLocation": { "@type": "Place", "name": "Argentina" },
+      "areaServed": { "@type": "Country", "name": "Argentina" },
+      "knowsAbout": [
+        "Desarrollo de software",
+        "Cartas digitales",
+        "Menús por código QR",
+        "Códigos QR",
+        "Automatización de procesos"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "soporte@galponlabs.com",
+        "availableLanguage": ["es"]
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://galponlabs.com/#web",
+      "url": "https://galponlabs.com/",
+      "name": "Galpón Labs",
+      "inLanguage": "es",
+      "publisher": { "@id": "https://galponlabs.com/#organizacion" }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://galponlabs.com/#pagina",
+      "url": "https://galponlabs.com/",
+      "name": "Galpón Labs — Software y productos digitales",
+      "inLanguage": "es",
+      "isPartOf": { "@id": "https://galponlabs.com/#web" },
+      "about": { "@id": "https://galponlabs.com/#organizacion" }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <div class="wrap">
