@@ -1251,7 +1251,7 @@
             if (cnt) {
                 cnt.textContent = items === 0
                     ? "Sin productos seleccionados"
-                    : items + (items === 1 ? " producto" : " productos") + " seleccionados";
+                    : (items === 1 ? "1 producto seleccionado" : items + " productos seleccionados");
             }
             var t = calcularTotal();
             var tot = document.getElementById("modalTotal");
